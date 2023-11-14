@@ -62,3 +62,7 @@ nav{
     background: white;
 
 }
+.warning{
+    text-align: center;
+    background-color: rgba(223, 47, 47, 0.66);
+}
