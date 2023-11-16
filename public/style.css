@@ -3,11 +3,15 @@
     padding: 0;
 }
 body{
-    background: black;
+    background: rgb(15, 15, 15);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .container{
     height: 60vh;
@@ -18,51 +22,88 @@ body{
     overflow-y: auto;
 }
 .message{
-    background-color: rgb(0, 128, 74);
+    background-color: rgb(71, 71, 71);
     max-width: 70%;
     width: fit-content;
     margin: 20px;
-    padding: 10px;
-    border: solid black ;
-    border-radius: 10px;
+    padding: 10px 20px;
+    /* border: solid black ; */
+    /* border-radius: 10px; */
 
 }
 .left{
     float: left;
     clear: both;
+    border-radius: 30px 30px 30px 0px ;
 }
 .right{
     float: right;
     clear: both;
-    background-color: rgb(0, 145, 142);
+    border-radius: 30px 30px 0px 30px;
+    background-color: rgb(255, 94, 7);
 }
 #send-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color:rgb(15, 15, 15);
+    width: fit-content;
+    margin: 20px auto;
+    padding:0px  20px;
+    border-radius: 20px;
+
+    border: 2px rgb(255, 119, 0) solid;
 
 }
 #messageInp{
     width: 58vw;
-    margin: 20px;
+    /* margin: 20px; */
     height: 30px;
-    background-color: rgb(79, 79, 79);
-    padding: 20px 10px ;
+    background-color: rgb(15, 15, 15);
+    /* padding: 20px 10px ; */
     border: none;
-    color: white
-    ;
+    color: white;
+    
+}
+#messageInp::placeholder{
+    color: rgb(163, 163, 163);
 }
 nav{
-    background-color: rgb(54, 54, 54);
-    padding: 1%;
+    background-color: rgb(255, 119, 0);
+    padding: 2vh 1% 5vh 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 0px 0px 50% 50%;
 }
-.btn{
+.container::-webkit-scrollbar{
+    display: none;
+}
+/* .btn{
     border: solid 2px black;
     color: black;
     background: white;
 
+} */
+.btn{
+    /* padding: 10px 20px;
+    border-radius: 20px; */
+    background-color: rgb(15, 15, 15);
+    border: none;
+}
+input{
+    border-radius: 4px;
+    padding: 10px;
 }
 .warning{
     text-align: center;
     background-color: rgba(223, 47, 47, 0.66);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.send-btn{
+    width: 20px;
 }

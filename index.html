@@ -5,12 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>N-chat Realtime Node Socket.io Cat App</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
   <script defer src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/style.css"> <!-- Update the path if necessary -->
     <script defer src="/client.js"></script> 
 </head>
@@ -19,17 +16,17 @@
   <nav >
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="8162545.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top " style="color: white;">
+        <!-- <img src="8162545.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top " style="color: white;"> -->
         N-Chat
       </a>
     </div>
   </nav>
-  <div class="warning">This is an anonymous server there will be no record of any messages or the person writing those messages</div>
+  <!-- <div class="warning">This is an anonymous server there will be no record of any messages or the person writing those messages</div> -->
   <div class="container"></div>
   <div class="send">
     <form action="#" id="send-container">
-      <input type="text" name="messageInp" id="messageInp">
-      <button class="btn" type="submit">Send</button>
+      <input type="text" name="messageInp" id="messageInp" placeholder="Send Message">
+      <button class="btn" type="submit"><img class="send-btn" src="send.png" alt="send"></button>
     </form>
   </div>
 </body>
